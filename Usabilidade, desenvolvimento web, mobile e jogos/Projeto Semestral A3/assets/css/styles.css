@@ -57,22 +57,31 @@ body {
     height: 13.5rem;
     margin: 20px;
   }
+  /* card section */
   
-  
-  /* Footer Section */
-  
-  .social-icon {
-    margin: 20px 10px;
-  }
-  
-  @media (max-width: 1028px) {
-  
-    #title {
-      text-align: center;
-    }
-  
-    .title-image {
-      position: static;
-      transform: rotate(0);
-    }
-  }
+  .card {
+    height: 500px;
+    
+    background-color: #212121;
+    box-shadow: 15px 15px 30px #191919,
+                 -15px -15px 30px #292929;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+   }
+   
+   .card:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.05);
+   }
+   
+   /*Hover*/
+.card:hover::after {
+  opacity: 0;
+ }
+ 
+ .card:hover .card-info {
+  color: #f7ba2b;
+  transition: color 1s;
+ }
+ 

@@ -1,7 +1,0 @@
-{
-  "name": "novo-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

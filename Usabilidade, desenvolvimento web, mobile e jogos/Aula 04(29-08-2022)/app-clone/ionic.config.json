@@ -1,7 +1,0 @@
-{
-  "name": "app-clone",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
